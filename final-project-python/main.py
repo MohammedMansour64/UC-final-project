@@ -1,3 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+
+#
+#
+# BEFORE DOING ANYTHING, READ THE README FILE INSIDE 'final-project-python' FOLDER
+#
+#
+
+
+
+
+
+
+
 from tkinter import *
 from PIL import Image, ImageTk
 from tkinter import messagebox
@@ -38,6 +62,8 @@ questions_answers.append(final_question)
 
 question_number = 0
 root = Tk()
+root.title("Who wants to be a Tkinter millionare?")
+root.iconbitmap('images/center.png')
 root.configure()
 root.attributes('-fullscreen', True)
 
@@ -127,11 +153,11 @@ def select_answer(clicked_button , disabled_button_1 , disabled_button_2 , disab
             questions_page_continue_button.place(x=725 , y=980)
         elif question_number ==  9:
             question_tension_sound = pygame.mixer.Sound('sounds/big_question_tension.wav')
-            question_tension_sound.set_volume(1)
+            question_tension_sound.set_volume(0.5)
             question_tension_sound.play()
             questions_page.after(7500)
             correct_answer_sound = pygame.mixer.Sound('sounds/إجابة صحيحة2.wav')
-            correct_answer_sound.set_volume(1)
+            correct_answer_sound.set_volume(0.5)
             correct_answer_sound.play()
             questions_page_continue_button.place(x=725 , y=980)
         elif question_number == 14:
