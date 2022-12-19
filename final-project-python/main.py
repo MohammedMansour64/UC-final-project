@@ -43,9 +43,9 @@ questions_answers_hard = data.hard_questions
 random.shuffle(questions_answers_easy)
 random.shuffle(questions_answers_medium)
 random.shuffle(questions_answers_hard)
-questions_answers_easy = questions_answers_easy[0:4]
-questions_answers_medium = questions_answers_medium[0:5]
-questions_answers_hard = questions_answers_hard[0:5]
+questions_answers_easy = questions_answers_easy[:4]
+questions_answers_medium = questions_answers_medium[:5]
+questions_answers_hard = questions_answers_hard[:5]
 
 questions_answers = []
 questions_answers.extend(questions_answers_easy)
