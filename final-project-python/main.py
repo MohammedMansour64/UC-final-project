@@ -591,7 +591,7 @@ questions_page_money_label = Label(questions_page , image= answer_correct_large 
 # questions_page_money_label.place(x= 475 , y=400)
 questions_page_money_label.pack_forget()
 
-questions_page_exit = Button(questions_page , image= exit_image , command=close_app , bg=main_bg_color , borderwidth=0 , highlightthickness=0 , fg=main_bg_color, activebackground=main_bg_color, activeforeground=main_bg_color , )
+questions_page_exit = Button(questions_page , image= exit_image , command=final_page_move , bg=main_bg_color , borderwidth=0 , highlightthickness=0 , fg=main_bg_color, activebackground=main_bg_color, activeforeground=main_bg_color , )
 questions_page_exit.place(x=25, y=950)
 
 # End of Questions Page
